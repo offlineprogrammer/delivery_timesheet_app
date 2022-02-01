@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-timesheetapp-staging-234118-authRole",
+      "UnauthRoleArn": "arn:aws:iam::279012124572:role/amplify-timesheetapp-staging-234118-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::279012124572:role/amplify-timesheetapp-staging-234118-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-timesheetapp-staging-234118-deployment",
+      "UnauthRoleName": "amplify-timesheetapp-staging-234118-unauthRole",
+      "StackName": "amplify-timesheetapp-staging-234118",
+      "StackId": "arn:aws:cloudformation:us-east-1:279012124572:stack/amplify-timesheetapp-staging-234118/cab7e540-8093-11ec-9e3b-0e3c367d9d25",
+      "AmplifyAppId": "d3tsq3q8gp52d9"
+    }
+  }
+}

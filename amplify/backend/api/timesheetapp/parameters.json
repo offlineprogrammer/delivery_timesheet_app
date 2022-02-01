@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "timesheetapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

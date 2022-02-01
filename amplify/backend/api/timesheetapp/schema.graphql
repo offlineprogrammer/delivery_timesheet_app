@@ -1,0 +1,16 @@
+type Delivery @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  delivery_date: AWSDate
+  time_in: AWSTime
+  time_out: AWSTime
+  total_hrs: Float
+  total_miles: Float
+  driverID: ID! @index(name: "byDriver")
+}
+
+type Driver @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  driver_name: String
+  Deliveries: [Delivery] @hasMany(indexName: "byDriver", fields: ["id"])
+  driver_number: String
+}
