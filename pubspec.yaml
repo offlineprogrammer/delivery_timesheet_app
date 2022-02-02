@@ -32,7 +32,7 @@ dependencies:
   amplify_flutter: ^0.3.0-rc.4
   amplify_auth_cognito: ^0.3.0-rc.4
   amplify_datastore: ^0.3.0-rc.4
-  
+  amplify_api: ^0.3.0-rc.4
   amplify_authenticator: ^0.1.0-rc.3
 
 
