@@ -7,8 +7,12 @@ import 'package:flutter/material.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_authenticator/amplify_authenticator.dart';
 import 'package:amplify_flutter/amplify_flutter.dart';
+import 'package:get/get.dart';
 
 import 'amplifyconfiguration.dart';
+import 'app_routes.dart';
+import 'controllers/bindings/controllers_bindings.dart';
+import 'pages/loading_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,17 +53,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Authenticator(
-      child: MaterialApp(
+      child: GetMaterialApp(
+        initialBinding: ControllersBindings(),
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
-
-        // `builder` must be specified with `Authenticator.builder()`.
         builder: Authenticator.builder(),
-
-        // You can use any combination of `routes`, `home`,
-        // `onGenerateRoute`, etc. as long as `builder` is
-        // configured as shown above.
-        home: const HomePage(),
+        home: const LoadingPage(),
+        getPages: AppRoutes.routes,
       ),
     );
   }
